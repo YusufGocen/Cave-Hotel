@@ -1,0 +1,547 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,300;1,400;1,600&display=swap');
+/* Ana Css */
+ *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+ }
+ html{
+    font-size: 10px;
+    scroll-behavior: smooth;
+ }
+ body{
+    font-family: 'Source Serif Pro', serif;
+    font-size: 1,6rem;
+    background-color: #1B1B1B;
+    color: white;
+ }
+ ul{
+    list-style-type: none;
+ }
+ a{
+    color: white;
+    text-decoration: none;
+ }
+ /* button  */
+ .btn{
+    font-size: 1.8rem;
+    cursor: pointer;
+    padding: 1rem 2rem;
+    display: inline-block;
+    border-radius: 3px;
+    border: 1px #C3A05E solid;
+    outline: none;
+    color: #C3A05E;
+    background-color: transparent;
+ }
+.btn:hover{
+    background-color: #C3A05E;
+    color: white;
+    transition: 0.8s;
+}
+/* ArkaPlan resim */
+.head{
+    background-image: url(resimler/hotel-resim.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.head::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+}
+.head * {
+    z-index: 5;
+}
+/* logo ve yazılar */
+.üst{
+    display: flex;
+    padding: 1rem;
+    justify-content: space-between;
+}
+#logo1{
+    height: 5rem;
+    display: flex;
+    flex-direction: column;
+}
+.otelisim{
+    font-size: 2rem;
+}
+/* Numara telefon */
+.iletişim{
+    font-size: 1.8rem;
+}
+.iletişim i{
+    color: #C3A05E;
+}
+.numara{
+    color: #C3A05E;
+    padding-right: 2rem;
+}
+/* Dil */
+#ülke{
+    font-size: 1.4rem;
+    color: #C3A05E;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    margin: 0.5rem;
+}
+#ülke option{
+    background-color:#1B1B1B;
+    color: #C3A05E;
+    text-align: center;
+
+}
+#bar{
+    display: none;
+    margin-top: 0;
+    text-align: right;
+}
+/* otel ozellikleri */
+main{
+    position: relative;
+    z-index: 5;
+}
+.container{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: #e6e6e6;
+}
+.içindekiler:hover{
+    color: #C3A05E;
+    transition: .3s;
+}
+/* Hoş geldiniz ve otelisim */
+.welcome{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12rem;
+    color: #e6e6e6;
+}
+.welcome2{
+    font-size: 3.5rem;
+}
+.otelisim2{
+    font-size: 7rem;
+    margin-top: 3rem;
+    letter-spacing: 1.5rem;
+}
+/* Hizmetler */
+.service{
+    border: #383838 0.2rem solid;
+    border-radius: 0.5rem;
+    height: 15rem;
+    font-size: 2rem;
+}
+.ilksıra{
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+.ikincisıra{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+/* Asagı link gitme */
+.linkgitme{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.linkgitme2{
+    font-weight: 600;
+    font-size: 2rem;
+    color: #C3A05E;
+    position: absolute;
+}
+/* Oklar */
+.oklar{
+    display: flex;
+    justify-content: space-between;
+    margin: 3rem;
+    font-size: 2.5rem;
+    cursor: pointer;
+    color: #e6e6e6;
+    margin-top: -10rem;
+}
+#sol:hover{
+    transform: translateY(-5px);    
+    transition: .5s;
+}
+#sag:hover{
+    transform: translateY(-5px);    
+    transition: .5s;
+}
+/* Otel tanıtım */
+.hotel{
+    height: 54rem;
+    display: flex;
+    align-items: flex-start;
+    margin: 2rem;
+    margin-top: 10rem;
+}
+.tanıtım{
+    margin-top: 3rem;
+    font-size: 1.5rem;
+}
+.otelresim img{
+    height: 45rem;
+    width: 70rem;
+}
+#otelbaslık{
+    padding-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+}
+#otelbaslık2{
+    font-size: 3rem;
+    font-weight: 600;
+    color: #C3A05E;
+    position: absolute;
+}
+.more{
+    cursor: pointer;
+    color: #C3A05E;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.more:hover{
+    text-decoration: underline;
+}
+/* Otel Fotograf */
+.hotelfotograf{
+    cursor: pointer;
+    margin: 0 3rem;
+    margin-bottom: 10rem;
+    display: flex;
+}
+.otelfoto1{
+    display: flex;
+    flex-direction: column;
+}
+.otelfoto2{
+    display: flex;
+    flex-direction: column;
+}
+.otelfoto3{
+    display: flex;
+    flex-direction: column;
+}
+#foto1{
+    height: 25rem;
+}
+#foto1:hover{
+    opacity: 0.8;
+    transition: .5s;
+}
+#foto2{
+    height: 25rem;
+}
+#foto2:hover{
+    opacity: 0.8;
+    transition: .5s;
+}
+#foto3{
+    height: 25rem;
+}
+#foto3:hover{
+    opacity: 0.8;
+    transition: .5s;
+}
+#foto4{
+    height: 25rem;
+}
+#foto4:hover{
+    opacity: 0.8;
+    transition: .5s;
+}
+#foto5{
+    height: 50rem;
+    width: 54rem;
+}
+#foto5:hover{
+    opacity: 0.8;
+    transition: .5s;
+}
+/* Odalar */
+.odatanıtım{
+    text-align: center;
+    margin-top: 13rem;
+}
+.odatanıtım2{
+    color: #C3A05E;
+    font-size: 3rem;
+    font-weight: 600;
+}
+.odatanıtım3{
+    margin-top: 2rem;
+    font-size: 2rem;
+}
+.odalar{
+    display: flex;
+    margin: 4rem 5rem;
+}
+.odalar h3{
+    text-align: center;
+    font-size: 2rem;
+    color: #C3A05E;
+}
+#odafoto{
+    cursor: pointer;
+    padding: 2rem;
+    height: 40rem;
+    width: 42rem;
+}
+#odafoto:hover{
+    opacity: 0.7;
+    transition: .5s;
+}
+#odabuton{
+    font-size: 1.8rem;
+    width: 18rem;
+    margin-left: 12rem;
+}
+/* Rezervasyon */
+.rezervasyon{
+    border: #383838 0.2rem solid;
+    border-radius: 0.5rem;
+    height: 13rem;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 5rem 7rem;
+}
+.rezervasyon h3{
+    text-align: center;
+    margin:1rem;
+    padding-top: 2rem;
+    font-size: 1.4rem;
+}
+.rezervasyon h3:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.Rezervasyon h1{
+    text-align: center;
+    color: #e6e6e6;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: 10rem;
+}
+#giris{
+    font-size: 2rem;
+    background-color: transparent;
+    color: #C3A05E;
+    border-bottom: 1px #C3A05E solid;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    outline: none;
+}
+#cıkıs{
+    font-size: 2rem;
+    background-color: transparent;
+    color: #C3A05E;
+    border-bottom: 1px #C3A05E solid;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    outline: none;
+}
+#kisi{
+    font-size: 2rem;
+    background-color: transparent;
+    color: #C3A05E;
+    border-bottom: 1px #C3A05E solid;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    outline: none;
+}
+#kisi option{
+    background-color: #1B1B1B;
+    color: #C3A05E;
+}
+.btnrezervasyon{
+    margin-top: 3.5rem;
+    width: 18rem;
+}
+
+/* Footer */
+footer{
+    height: 25rem;
+    margin-top: 10rem;
+    padding-top: 2px;
+    background-color: #383838;
+}
+.son{
+    display: flex;
+    justify-content: space-between;
+    height: 10rem;
+    margin: 8rem 6rem;
+}
+.sonlogo2{
+    height: 10rem;
+}
+.adres{
+    margin-top: 2rem;
+    font-size: 1rem;
+    color: #e6e6e6;
+}
+.fa-brands{
+    margin-top: 2rem;
+    cursor: pointer;
+    color: #e6e6e6;
+    padding: 0 1.5rem;
+    font-size: 4rem;
+}
+.fa-brands:hover{
+    color: #C3A05E;
+    transform: translateY(-5px);  
+    transition: .5s;
+}
+.haklar{
+    text-align: center;
+    color: #e6e6e6;
+}
+
+/* Mobil */
+
+@media (max-width: 575.98px){
+    html{
+        font-size: 8px;
+    }
+    .btn{
+        font-size: 10px;
+    }
+    .container{
+        display: none;
+    }
+    .oklar{
+        display: none;
+    }
+    .welcome2{
+        margin-top: 50px;
+    }
+    .otelisim2{
+        text-align: center;
+        margin-top: 20px;
+    }
+    .hotel{
+        flex-direction: column;
+    }
+    .tanıtım{
+        margin-bottom: 20px;
+    }
+    .otelresim img {
+        width: 450px;
+        height: 300px;
+    }
+    .hotelfotograf{
+        margin: 15px;
+        flex-direction: column-reverse;
+        margin-top: 100px;
+    }
+    #foto1{
+        margin-top: 30px;
+        height: 300px;
+        width: 450px;
+    }
+    #foto2{
+        margin-top: 30px;
+        height: 300px;
+        width: 450px;
+    }
+    #foto3{
+       margin-top: 30px;
+       height: 300px;
+       width: 450px;
+    }
+    #foto4{
+        margin-top: 30px;
+        height: 300px;
+        width: 450px;
+    }
+    #foto5{
+        margin-top: 30px;
+        width: 450px;
+        height: 300px;
+    }
+    .services{
+        margin-top: 80px;
+    }
+    .service{
+        border: none;
+    }
+    .odatanıtım{
+        margin-top: 50px;
+    }
+    .odalar{
+        margin: 10px 15px;
+        flex-direction: column;
+    }
+    .odalar h3{
+        margin-top: 50px;
+    }
+    #odafoto{
+        width: 450px;
+    }
+    #odabuton{
+        margin-left: 155px;
+    }
+    .rezervasyon{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 80px;
+        border: none;
+    }
+    footer{
+        margin-top: 120px;
+        height: 220px;
+    }
+    .fa-brands{
+        font-size: 25px;
+        display: flex;
+    }
+    .son{
+        margin: 5px;
+    }
+    .haklar{
+        margin-top: 150px;
+        text-align: center;
+    }
+    .sonlogo2{
+        margin-left: 5px;
+        margin-top: 30px;
+    }
+    .adres{
+        margin-top: 50px;
+    }
+    #ülke{
+        display: none;
+    }
+    #bar{
+        cursor: pointer;
+        display: block;
+        margin-top: 5px;
+        margin-right: 5px;
+        float: right;
+        font-size: 20px;
+    }
+    .ust{
+        margin-right: 20px;
+    }
+}
